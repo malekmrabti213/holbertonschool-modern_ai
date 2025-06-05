@@ -1,0 +1,1 @@
+This is the Modern AI curriculum.
