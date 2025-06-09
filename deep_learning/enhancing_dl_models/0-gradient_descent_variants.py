@@ -3,7 +3,8 @@
 from tensorflow import keras
 
 
-def train_with_gradient_descent_variant(variant, learning_rate, x_train, batch_size):
+def train_with_gradient_descent_variant(variant, learning_rate,
+                                        x_train, batch_size):
     """
     Arguments:
     variant: A string — 'batch', 'stochastic', or 'mini_batch'.
