@@ -21,7 +21,7 @@ def get_optimizer_SGD(name, lr, momentum, nesterov=False):
     - nesterov: A boolean indicating whether to apply Nesterov acceleration.
 
     Returns:
-    - optimizer: A Keras SGD optimizer instance configured with the provided settings.
+    - optimizer: A Keras SGD optimizer instance.
     """
     if name == 'SGD':
         return keras.optimizers.SGD(learning_rate=lr)
@@ -30,3 +30,4 @@ def get_optimizer_SGD(name, lr, momentum, nesterov=False):
     if name == 'SGD+Momentum+Nesterov':
         return keras.optimizers.SGD(learning_rate=lr, momentum=momentum,
                                     nesterov=nesterov)
+ settin
