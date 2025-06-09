@@ -20,7 +20,6 @@ def get_optimizer(name, learning_rate, momentum, beta_1, beta_2, rho):
     Returns:
     - optimizer: A tf.keras.optimizers.Optimizer instance.
     """
-    name = name.lower()
     if name == 'sgd':
         return keras.optimizers.SGD(learning_rate=learning_rate, momentum=momentum)
     if name == 'adam':
