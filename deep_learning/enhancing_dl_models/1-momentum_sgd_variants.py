@@ -30,4 +30,3 @@ def get_optimizer_SGD(name, lr, momentum, nesterov=False):
     if name == 'SGD+Momentum+Nesterov':
         return keras.optimizers.SGD(learning_rate=lr, momentum=momentum,
                                     nesterov=nesterov)
- settin
