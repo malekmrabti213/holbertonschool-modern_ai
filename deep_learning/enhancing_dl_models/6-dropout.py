@@ -2,7 +2,7 @@
 """
 Task 6
 """
-
+import numpy as np
 from tensorflow import keras
 
 
