@@ -22,7 +22,7 @@ def build_model(hp):
     for _ in range(hp.Int('num_layers', 1, 2)):
         model.add(keras.layers.Dense(
             units=hp.Int('units', min_value=4, max_value=12, step=4),
-            activation=hp.Choice('activation', ['relu','sigmoid']),
+            activation=hp.Choice('activation', ['relu', 'sigmoid']),
         ))
 
     model.add(keras.layers.Dense(10, activation='softmax'))
