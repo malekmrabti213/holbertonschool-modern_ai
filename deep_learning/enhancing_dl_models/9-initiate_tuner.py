@@ -8,6 +8,7 @@ from keras_tuner import Hyperband, RandomSearch, BayesianOptimization
 
 def initiate_tuner(tuner_type, build_model, seed, hyperband_iterations,
                    max_trials, objective, overwrite=True):
+
     """
     Parameters:
     - tuner_type (str): Type of tuner to use
@@ -20,6 +21,7 @@ def initiate_tuner(tuner_type, build_model, seed, hyperband_iterations,
     Returns:
     - tuner (kerastuner.Tuner): Configured Keras Tuner object.
     """
+
     if tuner_type == "Hyperband":
         tuner = Hyperband(
             build_model,
