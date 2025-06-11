@@ -25,6 +25,7 @@ def initiate_tuner(tuner_type, build_model, seed, hyperband_iterations,
     if tuner_type == "Hyperband":
 
         tuner = Hyperband(
+            # Initialize Hyperband
             build_model,
             objective=objective,
             seed=seed,
@@ -35,6 +36,7 @@ def initiate_tuner(tuner_type, build_model, seed, hyperband_iterations,
     elif tuner_type == "RandomSearch":
 
         tuner = RandomSearch(
+            # Initialize RandomSearch
             build_model,
             objective=objective,
             seed=seed,
@@ -45,6 +47,7 @@ def initiate_tuner(tuner_type, build_model, seed, hyperband_iterations,
     elif tuner_type == "BayesianOptimization":
 
         tuner = BayesianOptimization(
+            # Initialize BayesianOptimization
             build_model,
             objective=objective,
             seed=seed,
