@@ -2,6 +2,7 @@
 """
 Task 3
 """
+import tensorflow as tf
 
 
 def train_model(model, X, Y, epochs, verbose=1):
