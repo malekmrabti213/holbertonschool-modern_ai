@@ -60,3 +60,5 @@ deep_learning/dl_with_keras/6-checker1.py
 model_trained.weights.h5
 deep_learning/dl_with_keras/__pycache__/6-save_load_weights.cpython-39.pyc
 deep_learning/dl_with_keras/6-main.py
+deep_learning/dl_with_keras/7-checker.py
+deep_learning/dl_with_keras/7-main.py
