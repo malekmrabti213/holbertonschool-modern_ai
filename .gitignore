@@ -55,3 +55,8 @@ deep_learning/dl_with_keras/5-checker1.py
 deep_learning/dl_with_keras/5-main.py
 deep_learning/dl_with_keras/5-checker2.py
 mnist_model.keras
+deep_learning/dl_with_keras/6-checker2.py
+deep_learning/dl_with_keras/6-checker1.py
+model_trained.weights.h5
+deep_learning/dl_with_keras/__pycache__/6-save_load_weights.cpython-39.pyc
+deep_learning/dl_with_keras/6-main.py
