@@ -51,3 +51,7 @@ deep_learning/dl_with_keras/3-checker.py
 deep_learning/dl_with_keras/3-main.py
 deep_learning/dl_with_keras/4-main.py
 deep_learning/dl_with_keras/4-checker.py
+deep_learning/dl_with_keras/5-checker1.py
+deep_learning/dl_with_keras/5-main.py
+deep_learning/dl_with_keras/5-checker2.py
+mnist_model.keras
