@@ -7,7 +7,7 @@ import tensorflow as tf
 
 def predict(model, X, verbose=0):
     """
-    Make predictions using a trained Kera 
+    Make predictions using a trained Keras
     model -- A trained Keras model.
     X -- Input data with a shape of (number of examples, input features).
     verbose -- Verbosity mode for prediction (default is 0).
