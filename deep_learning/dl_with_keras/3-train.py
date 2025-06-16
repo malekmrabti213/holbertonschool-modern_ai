@@ -2,7 +2,7 @@
 """
 Task 3
 """
-import tensorflow as tf
+from tensorflow import keras
 
 
 def train_model(model, X, Y, epochs, verbose=1):
