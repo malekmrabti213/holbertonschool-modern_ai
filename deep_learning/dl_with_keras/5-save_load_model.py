@@ -15,6 +15,7 @@ def save_model(model, filepath):
     """
     model.save(filepath)
 
+
 def load_model(filepath):
     """
     Load a saved Keras model from a specified filepath.
