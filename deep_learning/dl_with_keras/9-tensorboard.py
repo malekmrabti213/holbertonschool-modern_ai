@@ -2,7 +2,7 @@
 """
 Task 9
 """
-import tensorflow as tf
+from tensorflow import keras
 import datetime
 
 
@@ -23,7 +23,7 @@ def log_to_tensorboard(log_dir, model, X, Y, epochs, verbose=1):
     """
 
     timestamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    tensorboard_callback = tf.keras.callbacks.TensorBoard(
+    tensorboard_callback = keras.callbacks.TensorBoard(
     log_dir=f"{log_dir}/{timestamp}",
     histogram_freq=1)
 
