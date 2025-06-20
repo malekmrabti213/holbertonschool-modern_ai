@@ -2,7 +2,7 @@
 """
 Task 0
 """
-from sklearn.tree import DecisionTreeClassifier
+from sklearn import tree
 
 
 def build_decision_tree(min_samples_leaf, min_samples_split, random_state):
@@ -15,7 +15,7 @@ def build_decision_tree(min_samples_leaf, min_samples_split, random_state):
     Returns:
         DecisionTreeClassifier: A configured instance of the Scikit-learn.
     """
-    clf = DecisionTreeClassifier(criterion='gini', max_depth=None,
+    clf = tree.DecisionTreeClassifier(criterion='gini', max_depth=None,
                                  min_samples_leaf=min_samples_leaf,
                                  min_samples_split=min_samples_split,
                                  random_state=random_state)
