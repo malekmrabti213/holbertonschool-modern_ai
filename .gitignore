@@ -84,3 +84,7 @@ logs/tensorboard_demo/20250617-011258/train/events.out.tfevents.1750119179.DESKT
 machine_learning/tree_models/0-main.py
 machine_learning/tree_models/0-checker2.py
 machine_learning/tree_models/0-checker1.py
+trained_decision_tree.png
+machine_learning/tree_models/1-checker0.py
+machine_learning/tree_models/1-checker1.py
+machine_learning/tree_models/1-main.py
