@@ -32,7 +32,8 @@ def get_best_alpha(clfs, train_scores, test_scores, ccp_alphas):
         min_gap = min(gaps)
 
         # Indices with smallest generalization gap
-        min_gap_indices = [i for i, g in zip(best_indices, gaps) if g == min_gap]
+        min_gap_indices = [i for i,
+                           g in zip(best_indices, gaps) if g == min_gap]
 
         if len(min_gap_indices) == 1:
             best_index = min_gap_indices[0]
