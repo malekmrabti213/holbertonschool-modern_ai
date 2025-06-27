@@ -26,9 +26,9 @@ def prune_and_evaluate_trees(X_train, y_train, X_test,
     clfs = []
     for ccp_alpha in ccp_alphas:
         clf = tree.DecisionTreeClassifier(ccp_alpha=ccp_alpha,
-                                     random_state=random_state,
-                                     min_samples_leaf=min_samples_leaf,
-                                     min_samples_split=min_samples_split)
+                                          random_state=random_state,
+                                          min_samples_leaf=min_samples_leaf,
+                                          min_samples_split=min_samples_split)
         clf.fit(X_train, y_train)
         clfs.append(clf)
 
