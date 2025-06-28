@@ -25,10 +25,10 @@ def compare_boosting_classifiers(name, n_estimators, random_state):
     """
     if name == 'adaboost':
         return ensemble.AdaBoostClassifier(n_estimators=n_estimators,
-                                  random_state=random_state)
+                                           random_state=random_state)
     elif name == 'gradientboosting':
         return ensemble.GradientBoostingClassifier(n_estimators=n_estimators,
-                                          random_state=random_state)
+                                                   random_state=random_state)
     elif name == 'xgboost':
         return xgb.XGBClassifier(n_estimators=n_estimators,
                                  random_state=random_state)
