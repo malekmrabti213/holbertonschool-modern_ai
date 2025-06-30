@@ -119,3 +119,7 @@ machine_learning/tree_models/test.py
 machine_learning/tree_models/11-checker1.py
 machine_learning/tree_models/11-checker0.py
 machine_learning/tree_models/11-main.py
+machine_learning/linear_models/0-checker2.py
+machine_learning/linear_models/0-checker0.py
+machine_learning/linear_models/0-checker1.py
+machine_learning/linear_models/0-main.py
