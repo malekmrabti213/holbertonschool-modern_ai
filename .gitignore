@@ -123,3 +123,6 @@ machine_learning/linear_models/0-checker2.py
 machine_learning/linear_models/0-checker0.py
 machine_learning/linear_models/0-checker1.py
 machine_learning/linear_models/0-main.py
+machine_learning/linear_models/explore_features_target_correlation.py
+machine_learning/linear_models/visualize_data.py
+machine_learning/linear_models/1-main.py
