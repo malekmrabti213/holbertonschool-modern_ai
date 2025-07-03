@@ -6,5 +6,7 @@ from sklearn import linear_model
 
 
 def ridge_regression(random_state):
-  
-  return linear_model.Ridge(random_state=random_state)
+    """
+    Creates and returns an untrained RidgeRegression model instance.
+    """
+    return linear_model.Ridge(random_state=random_state)
