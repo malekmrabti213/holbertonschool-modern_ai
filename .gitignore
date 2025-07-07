@@ -142,3 +142,6 @@ machine_learning/linear_models/4-main_1.py
 machine_learning/linear_models/2-checker3.py
 machine_learning/linear_models/3-checker3.py
 machine_learning/linear_models/4-main_2.py
+machine_learning/linear_models/4-checker0.py
+.gitignore
+machine_learning/linear_models/4-checker1.py
