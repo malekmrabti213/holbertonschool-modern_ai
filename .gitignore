@@ -157,3 +157,5 @@ machine_learning/linear_models/6-main.py
 machine_learning/linear_models/6-checker2.py
 machine_learning/linear_models/6-checker1.py
 machine_learning/linear_models/6-checker0.py
+precleaned-Telco-Customer-Churn.csv
+Telco-Customer-Churn.csv
