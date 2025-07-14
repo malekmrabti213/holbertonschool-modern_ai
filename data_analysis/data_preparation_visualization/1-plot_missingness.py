@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 def plot_missingness(df):
     """
     """
-    plt.figure(figsize=(12,8))
+    plt.figure(figsize=(12, 8))
     plt.imshow(df.isnull().T, aspect='auto')
     plt.yticks(range(len(df.columns)), df.columns)
     plt.title('Missingness Heatmap')
