@@ -167,3 +167,7 @@ data_analysis/data_preparation_visualization/1-test.py
 data_analysis/data_preparation_visualization/2-main.py
 data_analysis/data_preparation_visualization/2-test.py
 data_analysis/data_preparation_visualization/2-checker0.py
+data_analysis/data_preparation_visualization/3-checker2.py
+data_analysis/data_preparation_visualization/3-checker0.py
+data_analysis/data_preparation_visualization/3-checker1.py
+data_analysis/data_preparation_visualization/3-main.py
