@@ -10,5 +10,5 @@ def convert_columns(df):
     """
     df = df.copy()
     df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
-    df['SeniorCitizen'] = df['SeniorCitizen'].astype('object')
+    df['SeniorCitizen'] = df['SeniorCitizen'].map({0: 'No', 1: 'Yes'})
     return df
