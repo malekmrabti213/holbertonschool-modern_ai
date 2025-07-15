@@ -11,9 +11,13 @@ def plot_categorical_distributions(df, columns_to_plot=None):
     if columns_to_plot is None:
         cat_cols = df.select_dtypes(include='object').columns.drop('Churn')
     else:
-        cat_cols = [c for c in columns_to_plot if c in df.select_dtypes('object') and c != 'Churn']
+        cat_cols = []
+        for c in columns_to_plot:
+            if c in df.select_dtypes('object') and c != 'Churn':
+                cat_cols.append(c)
+
     n_cols, n_rows = 3, (len(cat_cols)+2)//3
-    fig, axes = plt.subplots(n_rows, n_cols, figsize=(15,5*n_rows))
+    fig, axes = plt.subplots(n_rows, n_cols, figsize=(15, 5*n_rows))
     axes = axes.flatten()
     for i, col in enumerate(cat_cols):
         counts = df[col].value_counts()
