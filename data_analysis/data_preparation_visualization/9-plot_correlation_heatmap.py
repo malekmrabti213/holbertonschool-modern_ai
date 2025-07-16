@@ -2,8 +2,8 @@
 """
 Task 9
 """
-import seaborn as sns
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 
 def plot_correlation_heatmap(df):
