@@ -9,7 +9,7 @@ import seaborn as sns
 def plot_correlation_heatmap(df):
     """
     """
-    plt.figure(figsize=(6,5))
+    plt.figure(figsize=(6, 5))
 
     numeric_cols = df.select_dtypes(include=['number']).columns.tolist()
     corr = df[numeric_cols].corr()
