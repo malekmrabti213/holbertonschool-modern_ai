@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 def plot_categorical_vs_churn(df, col):
     """
     """
-    plt.figure(figsize=(12, 8))    
+    plt.figure(figsize=(12, 8))
     # ct = pd.crosstab(df[col], df['Churn'], normalize='index')
     ct = df.groupby(col)['Churn'].value_counts(normalize=True).unstack()
 
