@@ -13,8 +13,8 @@ def ttest_numeric(df):
 
     for col in numeric_cols:
         stat, p = stats.ttest_ind(
-            df[df['Churn']=='Yes'][col],
-            df[df['Churn']=='No'][col],
+            df[df['Churn'] == 'Yes'][col],
+            df[df['Churn'] == 'No'][col],
             equal_var=False
         )
         results[col] = p
