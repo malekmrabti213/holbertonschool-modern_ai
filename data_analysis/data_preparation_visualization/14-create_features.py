@@ -39,5 +39,5 @@ def create_features(df):
     df.drop(columns=['tenure', 'MultipleLines', 'OnlineSecurity',
                      'OnlineBackup', 'DeviceProtection',
                      'TechSupport', 'StreamingTV',
-                     'StreamingMovies', 'InternetService'], inplace=True) 
+                     'StreamingMovies', 'InternetService'], inplace=True)
     return df
