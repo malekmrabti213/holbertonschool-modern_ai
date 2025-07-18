@@ -9,23 +9,23 @@ def create_features(df):
     """
     """
     df = df.copy()
-    
+
     # Define the service columns to consider
     services = [
         'MultipleLines', 'OnlineSecurity', 'OnlineBackup',
         'DeviceProtection', 'TechSupport', 'StreamingTV', 'StreamingMovies'
     ]
-    
-    # Create a binary mask for each service column 
+
+    # Create a binary mask for each service column
     service_counts = df[services].eq('Yes').astype(int)
-    
+
     # Include InternetService: count 'DSL' and 'Fiber optic' as subscribed
     internet_subscribed = (
         df['InternetService']
         .isin(['DSL', 'Fiber optic'])
         .astype(int)
     )
- 
+
     # Sum all services to compute NumServices
     df['NumServices'] = service_counts.sum(axis=1) + internet_subscribed
 
@@ -36,7 +36,8 @@ def create_features(df):
                labels=['0-12', '13-24', '25-48', '49-60', '60+']))
 
     # Drop the original 'tenure' column
-    df.drop(columns=['tenure','MultipleLines', 'OnlineSecurity', 'OnlineBackup',
-                     'DeviceProtection', 'TechSupport', 'StreamingTV',
-                     'StreamingMovies','InternetService'], inplace=True)    
+    df.drop(columns=['tenure','MultipleLines', 'OnlineSecurity',
+                     'OnlineBackup', 'DeviceProtection',
+                     'TechSupport', 'StreamingTV',
+                     'StreamingMovies', 'InternetService'], inplace=True) 
     return df
