@@ -36,7 +36,7 @@ def create_features(df):
                labels=['0-12', '13-24', '25-48', '49-60', '60+']))
 
     # Drop the original 'tenure' column
-    df.drop(columns=['tenure','MultipleLines', 'OnlineSecurity',
+    df.drop(columns=['tenure', 'MultipleLines', 'OnlineSecurity',
                      'OnlineBackup', 'DeviceProtection',
                      'TechSupport', 'StreamingTV',
                      'StreamingMovies', 'InternetService'], inplace=True) 
